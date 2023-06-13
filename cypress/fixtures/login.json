@@ -1,0 +1,16 @@
+{
+    "user_padrao": {
+        "email": "userpadrao@teste.com.br",
+        "senha": "1234",
+        "nome": "Usuário Padrão"
+    },
+    "user_nao_cadastrado": {
+        "email": "naocadastrado@teste.com.br",
+        "senha": "1234"
+    },
+    "emails_invalidos": [
+        "teste",
+        "teste@teste",
+        "teste.com"
+    ]
+}

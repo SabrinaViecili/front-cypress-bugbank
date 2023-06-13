@@ -1,0 +1,5 @@
+import './testes/login.cy'
+import './testes/testes/cadastro.cy'
+import './testes/transferencia.cy'
+import './testes/extrato.cy'
+import './testes/home.cy'

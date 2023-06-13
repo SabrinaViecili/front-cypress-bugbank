@@ -1,0 +1,12 @@
+{
+    "user_primario": {
+        "email": "user_primario@teste.com.br",
+        "nome": "User Primário",
+        "senha": "1234"
+    },
+    "user_secundario": {
+        "email": "user_secundario@teste.com.br",
+        "nome": "User Secundário",
+        "senha": "1234"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "user_padrao": {
+        "email": "userpadrao@teste.com.br",
+        "senha": "1234",
+        "nome": "Usuário Padrão"
+    },
+    "emails_invalidos": [
+        "teste",
+        "teste@teste",
+        "teste.com"
+    ]
+}

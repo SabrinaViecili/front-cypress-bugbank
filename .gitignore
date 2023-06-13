@@ -1,0 +1,7 @@
+node_modules/
+TestReport/
+screenshots/
+videos/
+mochawesome-report/
+
+cypress-combined-report.json

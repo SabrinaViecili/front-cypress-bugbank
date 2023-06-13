@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "cypress": "^12.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.2",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "scripts": {
+    "test": "cypress open",
+    "delete:reportFolder": "rd /s /q mochawesome-report",
+    "test:cli": "cypress run --spec cypress/e2e/testes/*",
+    "merge:reports": "mochawesome-merge mochawesome-report/*.json > cypress-combined-report.json",
+    "create:html:report": "npm run merge:reports && marge --reportDir TestReport cypress-combined-report.json"
+  }
+}
