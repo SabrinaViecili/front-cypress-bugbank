@@ -1,0 +1,47 @@
+Cenário: Todos os campos estão preenchidos corretamente
+"Entrada: E-mail válido, senha válida"
+Resultado esperado: O login é executado com sucesso e o usuário é direcionado para a home
+
+Cenário: Todos os campos estão preenchidos corretamente
+"Entrada: E-mail válido, senha válida"
+Resultado esperado: O login é executado com sucesso e o usuário é direcionado para a home
+
+Cenário: Todos os campos estão preenchidos corretamente
+"Entrada: E-mail válido, senha válida"
+Resultado esperado: O login é executado com sucesso e o usuário é direcionado para a home
+
+Cenário: Todos os campos estão preenchidos corretamente
+"Entrada: E-mail válido, senha válida"
+Resultado esperado: O login é executado com sucesso e o usuário é direcionado para a home
+
+Cenário: Verificação do saldo atual
+"Entrada: Após cada transação, verifique se o saldo disponível é atualizado corretamente e exibido de forma precisa"
+"Saida: Verifique se o saldo reflete o valor correto após cada transação, considerando as entradas e saídas de valores"
+
+Cenário: Exibição da data da transação
+Entrada: Verifique se cada transação exibe corretamente a data em que foi realizada
+Saida: Certifique-se de que a data seja exibida de acordo com o formato desejado e que esteja correta para cada transação específica
+
+Cenário: Tipo da transação
+Entrada: Verifique se cada transação exibe corretamente o tipo de transação realizado
+"Saida: Certifique-se de que o tipo de transação seja identificado corretamente, como ""Abertura de conta"", ""Transferência enviada"" ou ""Transferência recebida"""
+
+Cenário: Formatação do valor de saída
+"Entrada: Realize uma transação que envolva a saída de fundos e verifique se o valor correspondente é exibido corretamente, seguindo as especificações de formatação"
+Saida: Verifique se os valores de saída da conta são exibidos corretamente em vermelho e iniciam com o sinal de menos/negativo (-)
+
+Cenário: Transações sem comentários
+"Entrada: Realize uma transação sem fornecer um comentário e verifique se a transação é exibida corretamente, seguindo as especificações"
+Saida: Verifique se as transações que não possuem um comentário associado são exibidas corretamente com o sinal de menos/negativo (-)
+
+Cenário: Verificação de consistência
+"Entrada: Realize várias transações, incluindo entradas, saídas e transações sem comentário, e verifique se as características de exibição são aplicadas de forma consistente"
+"Saida: Verifique se as cores, sinal de menos/negativo e formatação de valores são aplicados corretamente em todas as transações"
+
+Cenário: Formatação do valor de entrada
+"Entrada: Realize uma transação que envolva a entrada de fundos e verifique se o valor correspondente é exibido corretamente, seguindo as especificações de formatação"
+Saida: Verifique se os valores de entrada na conta são exibidos corretamente em verde
+
+Cenário: Formatação do valor de entrada
+"Entrada: Realize uma transação que envolva a entrada de fundos e verifique se o valor correspondente é exibido corretamente, seguindo as especificações de formatação"
+Saida: Verifique se os valores de entrada na conta são exibidos corretamente em verde

@@ -1,0 +1,19 @@
+Bugs - Melhorias encontrados para a aplicação: https://bugbank.netlify.app/
+
+"1 - Na tela de cadastro ao clicar em [ <- ] o clique não tem ação.  A ação de voltar é efetuada apenas ao clicar em ""Voltar para o login""
+Deveria funcionar para a seta também;"
+"2 - Ao submeter o formulário de login sem preencher os campos obrigatórios a mensagem ""Usuário e senha precisam ser preenchidos"" não é exibida.
+Porém a mensagem de obrigatoriedade dos campos é exibida de forma individual para cada campo;"
+3 - Na tela de login ao inserir um email que ainda não foi cadastrado e clicar em [Registrar] ao ser direcionado para a tela de cadastro o campo e-mail já poderia vir preenchido.
+"4 - Ao realizar a tentativa de cadastro sem preencher o campo ""Nome"", a mensagem ""Nome não pode ser vazio"" não é exibida;"
+"5 - Ao submeter o formulário com os campos E-mail, senha e confirmação de senha em branco a mensagem ""É campo obrigatório"" é exibida para cada campo. Porém
+seguindo os requisitos a mensagem que deve ser exibida para cada campo é: ""O campo xxxx não pode ser vazio"";"
+"6 - No campo ""Nome"" não há validação de caracteres;"
+"7 - No campo ""Nome"" não há validação de quantidade de caracteres;"
+"8 - Ao realizar o cadastro da conta e o número a mesma ser exibido, o usuário poderia ser direcionado para a home;"
+"9 - O campo número da conta e dígito aceitam letras e cacteres especiais, também não há limitação de caracteres;"
+"10 - O campo ""Valor da transferencia"" nao está limitado para aceitar apenas números;"
+"11 - Ao digitar letras no campo ""Valor da transferencia"" a mensagem ""transferValue must be a `number` type, but the final value was: `NaN` (cast from the value `""qwqwqwqwqw""`)."" é exibida;"
+"12 - É possível realizar transferencia sem preencher o campo ""Descrição"";"
+"13 - É possível realizar transferencia sem preencher o campo ""Descrição"" com espaços;"
+"14 - Ao tentar realizar uma transferencia para a mesma conta a mensagem ""Não pode transferir pra mesmo conta"" deve ser ajustada conforme regra ortográfica;"

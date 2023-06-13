@@ -1,0 +1,67 @@
+Cenário: Transferência para uma conta válida
+"Entrada: Realize uma transferência para uma conta válida, com um número de conta existente e válido"
+"Saída: Verifique se a transferência é concluída com sucesso, sem erros ou mensagens de falha"
+
+Cenário: Transferência para uma conta inválida
+"Entrada:Tente realizar uma transferência de fundos para uma conta inválida, com um número de conta inexistente"
+"Saída: Verifique se o sistema rejeita corretamente a transferência e exibe a mensagem: ""Conta inválida ou inexistente"""
+
+Cenário: Transferência para contas com status pendente ou em processo
+Entrada: Verifique se o sistema impede a transferência para contas com status pendente ou em processo
+Saída: Apenas contas ativas e disponíveis podem receber transferências
+
+Cenário: Transferência com dígito da conta válido
+"Entrada: Realize uma transferência com um dígito da conta válido, composto apenas por caracteres numéricos"
+Saída: Verifique se o sistema aceita corretamente o dígito da conta e processa a transferência sem problemas
+
+Cenário: Transferência com dígito da conta inválido
+"Entrada: Tente realizar uma transferência com um dígito da conta inválido, contendo caracteres não numéricos"
+Saída: Verifique se o sistema rejeita corretamente a transferência e exibe uma mensagem de erro indicando que o dígito da conta deve conter apenas números
+
+Cenário: Validação de campos em branco
+Entrada: Garanta que o sistema exija que o número e dígito da conta sejam preenchidos e não permita transferências caso esses campos estejam em branco
+Saída: Verifique se o sistema exibe uma mensagem de erro apropriada para indicar que esses campos são obrigatórios
+
+Cenário: Transferência com descrição preenchida
+Entrada: Realize uma transferência de fundos preenchendo o campo de descrição com uma mensagem adequada
+"Saída: Verifique se a transferência é concluída com sucesso, sem erros ou mensagens de falha"
+
+Cenário: Transferência sem descrição
+Entrada: Tente realizar uma transferência sem preencher o campo de descrição
+Saída: Verifique se o sistema rejeita corretamente a transferência e exibe uma mensagem de erro indicando que o campo de descrição é obrigatório
+
+Cenário: Transferência com descrição em branco
+Entrada: Tente realizar uma transferência preenchendo o campo de descrição com espaços em branco
+"Saída: Verifique se o sistema valida corretamente o campo de descrição e rejeita a transferência, exibindo uma mensagem de erro indicando que o campo de descrição é obrigatório"
+
+Cenário: Transferência com valor positivo
+Entrada: Realize uma transferência com um valor maior que zero
+"Saída: Verifique se a transferência é concluída com sucesso, sem erros ou mensagens de falha"
+
+Cenário: Transferência com valor zero
+Entrada: Tente realizar uma transferência com um valor de transferência igual a zero
+Saída:  Verifique se o sistema rejeita corretamente a transferência e exibe uma mensagem de erro indicando que o valor da transferência deve ser maior que zero
+
+Cenário: Transferência com valor negativo
+Entrada: Tente realizar uma transferência com um valor de transferência negativo
+Saída:  Verifique se o sistema rejeita corretamente a transferência e exibe uma mensagem de erro indicando que o valor da transferência deve ser maior que zero
+
+Cenário: Transferência com valor decimal
+"Entrada: Realize uma transferência com um valor que contenha uma parte decimal, como 103.59"
+"Saída:  Verifique se o sistema processa a transferência corretamente, sem arredondamentos ou problemas de cálculo"
+
+Cenário: Transferência bem-sucedida
+Entrada: Realize uma transferência de fundos com um valor válido de uma conta de origem para uma conta de destino
+"Saída:   Verifique se o valor transferido é debitado corretamente da conta de origem e se a mensagem ""Transferência realizada com sucesso"" é exibida e o usuário é direcionado para a tela de extrato."
+
+Cenário: Saldo suficiente na conta de origem
+Entrada: Verifique se o sistema valida corretamente se a conta de origem possui saldo suficiente para cobrir o valor da transferência
+Saída:  ealize uma transferência com um valor igual ou menor que o saldo disponível na conta de origem e verifique se o valor é debitado corretamente e se a mensagem de sucesso é exibida
+
+Cenário: Saldo insuficiente na conta de origem
+Entrada: Tente realizar uma transferência com um valor superior ao saldo disponível na conta de origem
+"Saída: Verifique se o sistema rejeita corretamente a transferência, exibindo uma mensagem de erro indicando que o saldo da conta de origem é insuficiente e se nenhum valor é debitado da conta"
+
+Cenário: Verificação de consistência dos saldos
+"Entrada: Após a transferência, verifique se os saldos das contas de origem e destino são atualizados corretamente"
+Saída:  Garamta que não ocorram discrepâncias nos saldos das contas

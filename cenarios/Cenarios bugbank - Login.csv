@@ -1,0 +1,39 @@
+Cenário: Todos os campos estão preenchidos corretamente
+"Entrada: E-mail válido, senha válida"
+Saida: O login é executado com sucesso e o usuário é direcionado para a home
+
+Cenário: E-mail em branco
+"Entrada: E-mail em branco, senha válida"
+"Saida: Exibição da mensagem de erro ""E-mail obrigatório"""
+
+Cenário: Senha em branco
+"Entrada: E-mail válido, senha em branco"
+"Saida: Exibição da mensagem de erro ""Senha obrigatória"""
+
+Cenário: E-mail e senha em branco
+"Entrada: E-mail em branco, senha em branco"
+"Saida: Exibição da mensagem de erro ""Usuário e senha precisam ser preenchidos"""
+
+Cenário: E-mail inválido
+"Entrada: E-mail inválido, senha válida"
+"Saida: Exibição da mensagem de erro ""E-mail inválido"""
+
+Cenário: Senha incorreta
+"Entrada: E-mail válido, senha incorreta"
+"Saida: Exibição da mensagem de erro ""Senha incorreta"""
+
+Cenário: E-mail e senha incorreta
+"Entrada: E-mail incorreto, senha incorreta"
+"Saida: Exibição da mensagem de erro ""E-mail e senha incorretas"""
+
+Cenário: E-mail e senha preenchidos com espaços em branco
+"Entrada: E-mail com espaços em branco, senha com espaços em branco"
+"Saida: Exibição da mensagem de erro ""E-mail obrigatório"" e ""Senha obrigatória"""
+
+Cenário: Campos preenchidos com caracteres especiais
+"Entrada: E-mail com caracteres especiais, senha com caracteres especiais"
+Saida: O login é executado com sucesso (caso os caracteres especiais sejam permitidos)
+
+Cenário: Tentativa de login para usuários inválidos ou não cadastrados
+"Entrada: E-mail inválido, sem cadastro, senha com espaços em branco"
+Saida: Login não deve ser autorizado

@@ -1,0 +1,79 @@
+Cenário: Preencher todos os campos corretamente
+"Entrada: Insira um nome válido, um endereço de e-mail válido, uma senha e uma confirmação de senha correspondente"
+Saída: O cadastro deve ser aceito e uma nova conta deve ser criada.
+
+Cenário: Deixar o campo Nome em branco
+Entrada: Enviar o formulário de cadastro sem preencher o campo Nome
+"Saída: O sistema deve exibir a mensagem ""Nome não pode ser vazio"" não permitindo o cadastro"
+
+Cenário: Deixar o campo Email em branco
+Entrada: Enviar o formulário de cadastro sem preencher o campo Email
+"Saída: O sistema deve exibir a mensagem ""Email não pode ser vazio"" não permitindo o cadastro"
+
+Cenário: Digitar um endereço de e-mail inválido
+"Entrada: Insira um endereço de e-mail inválido no campo Email, por exemplo, um endereço sem o símbolo ""@"" ou sem o domínio correto"
+Saída: O sistema deve exibir uma mensagem de erro indicando que o endereço de e-mail é inválido
+
+Cenário: Deixar o campo Senha em branco
+Entrada: Enviar o formulário de cadastro sem preencher o campo Senha
+"Saída: O sistema deve exibir a mensagem ""Senha não pode ser vazio"" não permitindo o cadastro"
+
+Cenário: Deixar o campo Confirmação de senha em branco
+Entrada: Enviar o formulário de cadastro sem preencher o campo Confirmação de senha
+"Saída: O sistema deve exibir a mensagem ""Confirmar senha não pode ser vazio"" não permitindo o cadastro"
+
+Cenário: Digitar senhas diferentes nos campos Senha e Confirmação de senha
+Entrada:  Insira senhas diferentes nos campos Senha e Confirmação de senha
+Saída: O sistema deve exibir uma mensagem de erro indicando que as senhas não correspondem
+
+"Cenário: Preencher todos os campos, exceto a Confirmação de senha"
+"Entrada: Insira um nome válido, um endereço de e-mail válido e uma senha no campo Senha, mas deixe o campo Confirmação de senha em branco"
+Saída: O sistema deve exibir uma mensagem de erro indicando que o campo Confirmação de senha é obrigatório
+
+"Cenário: Preencher todos os campos, mas com valores de entrada inválidos"
+"Entrada:  Insira dados inválidos nos campos Nome, Email, Senha e Confirmação de senha"
+Saída:  O sistema deve exibir mensagens de erro relevantes para cada campo com valor inválido
+
+
+"Cenários para o requisito: ""Deixar ativo a opção ""Criar conta com saldo"" deve criar conta com saldo de R$ 1.000,00""
+- OBS: Os mesmos cenários se aplicam para o requisito: ""Deixar inativo a opção ""Criar conta com saldo"" deve criar conta com saldo de R$ 0,00"""
+"Cenário: Deixar a opção ""Criar conta com saldo"" ativada"
+"Entrada: Durante o cadastro, selecione a opção ""Criar conta com saldo"" e prossiga com o preenchimento dos demais campos"
+"Saída: Após a conclusão do cadastro, verifique se a conta é criada com um saldo de R$ 1.000,00"
+
+"Cenário: Deixar a opção ""Criar conta com saldo"" desativada"
+"Entrada: Durante o cadastro, não selecione a opção ""Criar conta com saldo"" e preencha os demais campos obrigatórios"
+"Saída: Após a conclusão do cadastro, verifique se a conta é criada sem saldo"
+
+Cenário: Validar saldo da conta criada
+"Entrada: Após o cadastro ser concluído com a opção ""Criar conta com saldo"" ativada"
+"Saída: Verifique se a conta é criada com um saldo de R$ 1.000,00,"
+
+Cenário: Combinar com outros requisitos de cadastro
+"Entrada: Verifique se o requisito ""Criar conta com saldo"" funciona corretamente em conjunto com outros requisitos de cadastro"
+Saída: A conta deve ser criada normalmente
+
+Cenário: Validar mensagem de sucesso
+"Entrada:  Após o cadastro ser concluído com sucesso e a opção ""Criar conta com saldo"" ativada"
+"Saída: Verifique se uma mensagem adequada é exibida para indicar que a conta foi criada com sucesso e que o saldo inicial é de R$ 1.000,00"
+
+"Cenários para o requisito: ""Cadastrar conta com sucesso deve exibir número da conta criada"""
+Cenário: Cadastro bem-sucedido
+Entrada:  Preencha todos os campos obrigatórios corretamente e conclua o cadastro
+Saída:  Verifique se o sistema exibe o número da conta recém-criada
+
+Cenário: Validação do formato do número da conta
+Entrada: Cadastro é concluído com sucesso.
+Saída: Verifique se o número da conta exibido segue o formato esperado
+
+Cenário: Cadastro sem exibição do número da conta
+"Entrada:  Tente realizar um cadastro bem-sucedido e verifique se, em algum cenário específico (como uma configuração ou condição), o número da conta não é exibido"
+Saída: Verifique se a ausência do número da conta é intencional e se é devidamente comunicada ao usuário
+
+Cenário: Validação do número da conta em diferentes pontos de acesso
+Entrada: Verifique se o número da conta é exibido corretamente em diferentes pontos de acesso do sistema
+Saída: O numero da conta deve ser exibido na home/perfil do usuário/extrato
+
+Cenário: Mensagem de erro em caso de falha no cadastro
+Entrada:  Tente realizar um cadastro que falhe devido a um erro do sistema ou a um preenchimento incorreto dos campos obrigatórios
+"Saída: Verifique se o sistema não exibe o número da conta nesses casos e, em vez disso, exibe uma mensagem de erro apropriada para indicar que o cadastro não foi concluído com sucesso"
