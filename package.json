@@ -9,7 +9,8 @@
     "mochawesome-report-generator": "^6.2.0"
   },
   "scripts": {
-    "test": "cypress open",
+    "test": "cypress run",
+    "cypress:open":"cypress open",
     "delete:reportFolder": "rd /s /q mochawesome-report",
     "test:cli": "cypress run --spec cypress/e2e/testes/*",
     "merge:reports": "mochawesome-merge mochawesome-report/*.json > cypress-combined-report.json",
