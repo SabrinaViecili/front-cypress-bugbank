@@ -1,0 +1,1 @@
+# front-cypress-bugbank
