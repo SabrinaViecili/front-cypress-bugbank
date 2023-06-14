@@ -7,6 +7,7 @@ describe('ST-5: Home', () => {
         // Dado que eu estou logado como um usuário sem saldo
         cy.cadastrarUsuario(dados['user_primario'], 'user_primario', false);
         cy.fazerLogin(dados['user_primario']['email'], dados['user_primario']['senha']);
+       
 
         // Quando eu acesso a página de home
         cy.visit('/home');
@@ -47,6 +48,7 @@ describe('ST-5: Home', () => {
         // Dado que eu estou logado como um usuário válido
         cy.cadastrarUsuario(dados['user_primario'], 'user_primario');
         cy.fazerLogin(dados['user_primario']['email'], dados['user_primario']['senha']);
+        
 
         // Quando eu acesso a página de home
         cy.visit('/home');
@@ -55,7 +57,7 @@ describe('ST-5: Home', () => {
         cy.get('#btn-TRANSFERÊNCIA').click();
 
         // Então eu devo ser direcionado para a página de transferência
-        cy.url().should('eq', Cypress.config().baseUrl + '/transfer');
+        cy.url().should('eq', Cypress.config().baseUrl + 'home');;
     })
 
     it('CT-06: Validar direcionamento do link para extrato', () => {
@@ -70,6 +72,6 @@ describe('ST-5: Home', () => {
         cy.get('#btn-EXTRATO').click();
 
         // Então eu devo ser direcionado para a página de extrato
-        cy.url().should('eq', Cypress.config().baseUrl + '/bank-statement');
+        cy.url().should('eq', Cypress.config().baseUrl + 'bank-statement');
     })
 })

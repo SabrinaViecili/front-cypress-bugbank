@@ -24,7 +24,7 @@ describe('ST-1: Login', () => {
     cy.get('p').contains('É campo obrigatório').should('exist');
 
     // E não devo ser direcionado para a home
-    cy.url().should('eq', Cypress.config().baseUrl + '/');
+    cy.url().should('eq', Cypress.config().baseUrl + '');
   })
 
   it('CT-02: Validar obrigatoriedade de senha', () => {
@@ -40,7 +40,7 @@ describe('ST-1: Login', () => {
     cy.get('p').contains('É campo obrigatório').should('exist');
     
     // E não devo ser direcionado para a home
-    cy.url().should('eq', Cypress.config().baseUrl + '/');
+    cy.url().should('eq', Cypress.config().baseUrl + '');
     
   })
 
@@ -61,7 +61,7 @@ describe('ST-1: Login', () => {
       cy.get('p').contains('Formato inválido').should('exist');
 
       // E não devo ser direcionado para a home
-      cy.url().should('eq', Cypress.config().baseUrl + '/');
+      cy.url().should('eq', Cypress.config().baseUrl + '');
     })
   })
 
@@ -80,7 +80,7 @@ describe('ST-1: Login', () => {
     cy.get('p').contains('Usuário ou senha inválido').should('exist');
 
     // E não devo ser direcionado para a home
-    cy.url().should('eq', Cypress.config().baseUrl + '/');
+    cy.url().should('eq', Cypress.config().baseUrl + '');
   })
 
   it('CT-05: Validar senha incorreta', () => {
@@ -100,7 +100,7 @@ describe('ST-1: Login', () => {
     cy.get('p').contains('Usuário ou senha inválido').should('exist');
 
     // E não devo ser direcionado para a home
-    cy.url().should('eq', Cypress.config().baseUrl + '/');
+    cy.url().should('eq', Cypress.config().baseUrl + '');
   })
 
   it('CT-06: Validar login com sucesso', () => {
@@ -117,7 +117,7 @@ describe('ST-1: Login', () => {
     cy.get('button').contains('Acessar').click();
 
     // Então eu devo ser direcionado para a home como usuário logado
-    cy.url().should('eq', Cypress.config().baseUrl + '/home');
+    cy.url().should('eq', Cypress.config().baseUrl + 'home');
   })
 
 })
