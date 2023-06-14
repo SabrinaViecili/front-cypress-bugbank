@@ -38,6 +38,9 @@ Uma vez que todas as dependências já estão listadas no arquivo `package.json`
 
 Esse projeto foi contruído com a arquitetura comum de testes front-end e explorando os recursos do Cypress. A estrutura do projeto é a seguinte:
 
+`cenarios` - arquivos csv com os possiveis cenarios de testes mapeados, assim como possiveis bugs e melhorias;
+
+
 `integration e2e` - arquivos de teste (separados em subpastas que representam os endpoints) - Utilizada para os arquivos de testes;
 
 `fixtures` - Utilizado para os arquivos de dados fixos, como mocks que serão usados ​​nos testes;
