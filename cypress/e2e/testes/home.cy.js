@@ -57,7 +57,7 @@ describe('ST-5: Home', () => {
         cy.get('#btn-TRANSFERÊNCIA').click();
 
         // Então eu devo ser direcionado para a página de transferência
-        cy.url().should('eq', Cypress.config().baseUrl + 'home');;
+        cy.url().should('eq', Cypress.config().baseUrl + 'transfer');;
     })
 
     it('CT-06: Validar direcionamento do link para extrato', () => {

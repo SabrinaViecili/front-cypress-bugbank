@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "cypress": "^12.4.0"
+    "cypress": "^12.4.0",
+    "faker-br": "^0.4.1"
   },
   "devDependencies": {
     "mocha": "^10.2.0",
@@ -10,7 +11,7 @@
   },
   "scripts": {
     "test": "cypress run",
-    "cypress:open":"cypress open",
+    "cypress:open": "cypress open",
     "delete:reportFolder": "rd /s /q mochawesome-report",
     "test:cli": "cypress run --spec cypress/e2e/testes/*",
     "merge:reports": "mochawesome-merge mochawesome-report/*.json > cypress-combined-report.json",
